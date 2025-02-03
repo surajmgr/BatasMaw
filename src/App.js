@@ -10,6 +10,7 @@ import { routes } from "./Global/Datas/RoutesData";
 import ScrollToTop from "./Component/Global/ScrollToTop";
 import { HelmetProvider } from "react-helmet-async";
 import { Helmet } from "react-helmet-async";
+import Header from "./Component/NewHome/Header";
 
 const App = () => {
   return (
@@ -25,7 +26,8 @@ const App = () => {
           />
         </Helmet> */}
        
-          <Navbar />
+          {/* <Navbar /> */}
+          <Header />
           <Suspense fallback={<Loading />}>
             <Routes>
               {routes.map((route) => (

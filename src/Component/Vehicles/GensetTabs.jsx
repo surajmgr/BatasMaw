@@ -2,31 +2,31 @@ import React, { useRef, useState } from "react";
 import ProductCard from "../Global/ProductCard";
 import { TabList, TabPanel, Tabs } from "react-tabs";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Pagination from "../Global/Pagination";
-import Slider from "react-slick";
-import { CustomTab } from "../Global/CustomTab";
+// import Pagination from "../Global/Pagination";
+// import Slider from "react-slick";
+// import { CustomTab } from "../Global/CustomTab";
 
 const GensetTabs = ({ data: cate }) => {
   const productsRef = useRef(null);
-  const [tabIndex, setTabIndex] = useState(0);
+  // const [tabIndex, setTabIndex] = useState(0);
 
-  const CustomPrevArrow = (props) => {
-    const { onClick } = props;
-    return (
-      <div onClick={onClick} className={props.className}>
-        <IoIosArrowBack className="slick-arrow slick-prev text-primary" />
-      </div>
-    );
-  };
+  // const CustomPrevArrow = (props) => {
+  //   const { onClick } = props;
+  //   return (
+  //     <div onClick={onClick} className={props.className}>
+  //       <IoIosArrowBack className="slick-arrow slick-prev text-primary" />
+  //     </div>
+  //   );
+  // };
 
-  const CustomNextArrow = (props) => {
-    const { onClick } = props;
-    return (
-      <div onClick={onClick} className={props.className}>
-        <IoIosArrowForward className="slick-arrow slick-next text-primary" />
-      </div>
-    );
-  };
+  // const CustomNextArrow = (props) => {
+  //   const { onClick } = props;
+  //   return (
+  //     <div onClick={onClick} className={props.className}>
+  //       <IoIosArrowForward className="slick-arrow slick-next text-primary" />
+  //     </div>
+  //   );
+  // };
 
   return (
     <div className="product-wrapper" ref={productsRef}>

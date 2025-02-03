@@ -14,6 +14,8 @@ import useGet from "../Global/Apis/useGet";
 import useScrollToHash from "../Global/Hooks/useScrollToHash";
 import GallerySection from "../Component/Home/GallerySection";
 
+import Home from "../Component/NewHome/Home";
+
 const Homepage = () => {
   const { data: banners } = useGet("banners");
   const { data: testimonals, isLoading: testimonalsLoading } =
@@ -25,26 +27,30 @@ const Homepage = () => {
   return (
     <>
       <main className="home">
-        <HeroSection banners={banners} />
+        {/* <HeroSection banners={banners} />
         <ProductsTab />
         <HelpSection />
         <MapSection />
         <NewsEvent />
-        <ClientSection staticData={staticData}/>
+        <ClientSection staticData={staticData}/> */}
         {testimonalsLoading ? (
           ""
         ) : (
-          <Testimonials
-            heading="Testimonials"
-            data={testimonals ? testimonals : testiData}
-            slider={true}
-            right={false}
-          />
+          // <Testimonials
+          //   heading="Testimonials"
+          //   data={testimonals ? testimonals : testiData}
+          //   slider={true}
+          //   right={false}
+          // />
+          ""
         )}
-        <EmiCalculator />
+        {/* <EmiCalculator />
         <VideoSection data={galleries?.video}  staticData={staticData}/>
         <GallerySection data={galleries?.gallery} />
-        <FaqFeedBackSection />
+        <FaqFeedBackSection /> */}
+
+          <Home />
+
       </main>
     </>
   );

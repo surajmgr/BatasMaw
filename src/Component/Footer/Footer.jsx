@@ -35,7 +35,7 @@ const Footer = () => {
         autoClose={5000}
         hideProgressBar={false}
       />
-      <FixedSideLinks settings={settings} />
+      {/* <FixedSideLinks settings={settings} /> */}
       <footer className="bg-secondary pt-[80px] text-sm text-white">
         <div className="side-padding  px-8">
           <div className="container mx-auto pb-[80px]">
