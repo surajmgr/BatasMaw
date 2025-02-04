@@ -33,24 +33,21 @@ const Homepage = () => {
         <MapSection />
         <NewsEvent />
         <ClientSection staticData={staticData}/> */}
-        {testimonalsLoading ? (
-          ""
-        ) : (
-          // <Testimonials
-          //   heading="Testimonials"
-          //   data={testimonals ? testimonals : testiData}
-          //   slider={true}
-          //   right={false}
-          // />
-          ""
-        )}
+        {testimonalsLoading
+          ? ""
+          : // <Testimonials
+            //   heading="Testimonials"
+            //   data={testimonals ? testimonals : testiData}
+            //   slider={true}
+            //   right={false}
+            // />
+            ""}
         {/* <EmiCalculator />
         <VideoSection data={galleries?.video}  staticData={staticData}/>
         <GallerySection data={galleries?.gallery} />
         <FaqFeedBackSection /> */}
 
-          <Home />
-
+        <Home />
       </main>
     </>
   );
