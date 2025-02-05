@@ -2,7 +2,6 @@
   "name": "batas_maw",
   "version": "0.2.0",
   "private": true,
-  "homepage": "https://surajmgr.github.io/BatasMaw",
   "dependencies": {
     "@rollup/plugin-inject": "^5.0.5",
     "@testing-library/jest-dom": "^5.17.0",

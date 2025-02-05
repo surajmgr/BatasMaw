@@ -7,7 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./index.css";
 import App from "./App";
 import { Layout } from "./Global/Context/Layout";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import smoothscroll from "smoothscroll-polyfill"; // Import the polyfill
 
 smoothscroll.polyfill();
@@ -16,9 +16,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Layout>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </Layout>
   </React.StrictMode>,
 );
