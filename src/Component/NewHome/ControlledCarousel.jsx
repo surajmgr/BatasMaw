@@ -8,6 +8,7 @@ function CarouselImage(props) {
             width: '100%',
             objectFit: 'cover',
             height: '100vh',
+            opacity: 0.7,
         }}
       className="d-block"
       src={props.src}

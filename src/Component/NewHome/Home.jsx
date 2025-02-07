@@ -31,9 +31,9 @@ const Home = () => {
           <Testimonials />
         </section>
 
-        <section className="home-message">
+        {/* <section className="home-message">
           <Message />
-        </section>
+        </section> */}
 
         <section className="home-gallery">
           <News />
@@ -43,9 +43,9 @@ const Home = () => {
           <ClientSection staticData={staticData} />
         </section>
 
-        <section className="request-demo">
+        {/* <section className="request-demo">
           <RequestDemo />
-        </section>
+        </section> */}
       </div>
     </>
   );

@@ -69,8 +69,8 @@ export class Testimonials extends Component {
                   <div class="img-box">
                     <img src={testimonial.avatar} alt={testimonial.name} />
                   </div>
-                  <p class="testimonial">{testimonial.testimonial}</p>
-                  <p class="overview">
+                  <p class="testimonial text-xl">{testimonial.testimonial}</p>
+                  <p class="overview text-xl">
                     <b
                       style={{ color: testimonial.color ?? "var(--li-col-1)" }}
                     >

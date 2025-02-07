@@ -54,7 +54,8 @@
   top: 0;
   width: 85px;
   height: 24px;
-  margin-top: 7px;
+  margin-top: 14px;
+  margin-left: 20px;
 }
 
 .header-full-wrp::before {
@@ -165,7 +166,7 @@
   );
 }
 .header-full-wrp .main-nav-bx {
-  padding: 25px 0px;
+  padding: 15px 0px;
   position: relative;
   margin: 0 auto;
   /* margin-top: 33px; */
@@ -371,23 +372,13 @@ a {
   right: -1px;
   content: "";
   width: auto;
-  height: 160px;
+  height: 120px;
   position: absolute;
   top: -158px;
   left: -1px;
   z-index: 1;
-  /* background: -moz-linear-gradient(
-    top,
-    rgba(125, 185, 232, 0) 0%,
-    rgba(0, 0, 0, 0.78) 78%,
-    rgb(0, 0, 0) 100%
-  ); */
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.78) 78%,
-    rgb(255, 255, 255) 100%
-  );
+ 
+ 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007db9e8", endColorstr="#000000", GradientType=0);
 }
 
@@ -737,8 +728,8 @@ a.common-cta {
 
 .carousel-item .img-box,
 .home-message .img-box {
-  width: 135px;
-  height: 135px;
+  width: 205px;
+  height: 205px;
   margin: 0 auto;
   padding: 5px;
   border: 1px solid #ddd;
@@ -921,7 +912,7 @@ a.common-cta {
 }
 
 .home-client {
-  background-color: var(--section-bg);
+  /* background-color: var(--section-bg); */
 }
 
 input::placeholder {

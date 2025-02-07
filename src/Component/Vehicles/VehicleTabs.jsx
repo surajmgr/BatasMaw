@@ -6,8 +6,7 @@ import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Pagination from "../Global/Pagination";
 
-const VehicleTabs = ({data:cate}) => {
-
+const VehicleTabs = ({ data: cate }) => {
   const [tabIndex, setTabIndex] = useState(0);
   const [dataFromChild, setDataFromChild] = useState([]);
   const productsRef = useRef(null);
@@ -64,14 +63,14 @@ const VehicleTabs = ({data:cate}) => {
   return (
     <div className="product-wrapper" ref={productsRef}>
       <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-        <div className="product-tabs mb-8 px-5 lg:px-0">
+        <div className="product-tabs  mb-8 px-5 lg:px-0">
           <TabList>
             <Slider {...ProductTab} className="product-tab-slider">
               {cate?.map((item, index) => (
                 <CustomTab
                   onClick={() => setTabIndex(index)}
                   key={item?.id}
-                  className={`skew-btn btn-transparent cursor-pointer px-4 py-2 text-center uppercase text-grey transition-all duration-300 ease-linear before:border-grey  ${index === tabIndex ? "text-white transition-all duration-300 ease-linear before:border-primary before:bg-primary " : ""}`}
+                  className={`btn-transparent  cursor-pointer rounded-full px-4 py-2 text-center uppercase text-grey transition-all duration-300 ease-linear before:border-grey  ${index === tabIndex ? "text-white transition-all duration-300 ease-linear before:border-primary before:bg-primary " : ""}`}
                 >
                   {item?.name}
                 </CustomTab>
@@ -98,7 +97,7 @@ const VehicleTabs = ({data:cate}) => {
                     />
                   ))
                 ) : (
-                  <div className="text-center w-full">
+                  <div className="w-full text-center">
                     <p>No Data found</p>
                   </div>
                 )}

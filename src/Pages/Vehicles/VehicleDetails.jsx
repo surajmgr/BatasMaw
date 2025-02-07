@@ -26,7 +26,7 @@ const VehicleDetails = () => {
 
   return (
     <>
-      <Breadcrumbs data={details?.name} />
+      {/* <Breadcrumbs data={details?.name} /> */}
       <section className="details-page pt-16">
         <div className="side-padding">
           <div className="container mx-auto">
@@ -37,11 +37,11 @@ const VehicleDetails = () => {
             />
             <DetailTabs data={details} />
             <DetailReview ref={reviewRef} id={details?.id}/>
-            <MapSection ref={mapRef} />
+            {/* <MapSection ref={mapRef} /> */}
           </div>
         </div>
       </section>
-      <SimilarVehicles data={details?.category_name} />
+      {/* <SimilarVehicles data={details?.category_name} /> */}
     </>
   );
 };

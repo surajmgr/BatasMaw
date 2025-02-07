@@ -73,6 +73,9 @@ html {
     @apply text-xl;
   }
 }
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
 
 @layer utilities {
   body {
